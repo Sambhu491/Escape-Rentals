@@ -135,26 +135,37 @@ https://escape-rentals.vercel.app/
 
 ## Preview & Screenshots
 
+#### **Home Page**
 ![Home Page](/react_frontend/src/assets/readmeImg/Home-Page.png)
 
+#### **Property Page**
 ![Property Page](/react_frontend/src/assets/readmeImg/Property-Page.png)
 
+#### **Property Details Page**
 ![Property Details Page](/react_frontend/src/assets/readmeImg/PropertyDetails.png)
 
+#### **Register Page**
 ![Register Page](/react_frontend/src/assets/readmeImg/Register-Page.png)
 
+#### **Login Page**
 ![Login Page](/react_frontend/src/assets/readmeImg/Login-Page.png)
 
+#### **Forgot Password Page**
 ![Forgot Password Page](/react_frontend/src/assets/readmeImg/Forgot-Password-Page.png)
 
+#### **Reset Password Page**
 ![Reset Password Page](/react_frontend/src/assets/readmeImg/Reset-Password-Page.png)
 
+#### **About Page**
 ![About Page](/react_frontend/src/assets/readmeImg/About-Page.png)
 
+#### **Contact Page**
 ![Contact Page](/react_frontend/src/assets/readmeImg/Contact-Page.png)
 
+#### **Privacy Policy Page**
 ![Privacy Policy Page](/react_frontend/src/assets/readmeImg/Privacy-Policy-Page.png)
 
+#### **Terms Page**
 ![Terms Page](/react_frontend/src/assets/readmeImg/Terms-Page.png)
 
 
