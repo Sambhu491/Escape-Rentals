@@ -130,7 +130,33 @@ https://escape-rentals.vercel.app/
 ### External Services
 - Razorpay (Payment Gateway)
 - Cloudinary (Image Storage)
-- Gmail SMTP (Email Services)
+- Gmail (Email Services)
+---
+
+## Preview & Screenshots
+
+![Home Page](/react_frontend/src/assets/readmeImg/Home-Page.png)
+
+![Property Page](/react_frontend/src/assets/readmeImg/Property-Page.png)
+
+![Property Details Page](/react_frontend/src/assets/readmeImg/PropertyDetails.png)
+
+![Register Page](/react_frontend/src/assets/readmeImg/Register-Page.png)
+
+![Login Page](/react_frontend/src/assets/readmeImg/Login-Page.png)
+
+![Forgot Password Page](/react_frontend/src/assets/readmeImg/Forgot-Password-Page.png)
+
+![Reset Password Page](/react_frontend/src/assets/readmeImg/Reset-Password-Page.png)
+
+![About Page](/react_frontend/src/assets/readmeImg/About-Page.png)
+
+![Contact Page](/react_frontend/src/assets/readmeImg/Contact-Page.png)
+
+![Privacy Policy Page](/react_frontend/src/assets/readmeImg/Privacy-Policy-Page.png)
+
+![Terms Page](/react_frontend/src/assets/readmeImg/Terms-Page.png)
+
 
 ---
 ## Project Structure
