@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Required</title>
+</head>
+<body style="font-family: Arial, sans-serif; color: #333333; margin: 0; padding: 20px; line-height: 1.6;">
+
+<h2 style="color: #e67e22;">Payment Required</h2>
+
+<p>Hello <strong th:text="${firstName}">User</strong>,</p>
+
+<p>Your Escape Rentals reservation is awaiting payment. Please complete the payment to confirm your booking.</p>
+
+<p>Your reservation details:</p>
+
+<div style="background: #f4f4f4; border-left: 4px solid #e67e22; padding: 12px 15px; font-size: 16px; margin: 15px 0; max-width: 350px;">
+    <p style="margin: 5px 0;">
+        Reservation ID:
+        <strong th:text="${reservationId}">RES123</strong>
+    </p>
+
+    <p style="margin: 5px 0;">
+        Amount Due:
+        <strong th:text="${amount}">1000</strong>
+    </p>
+</div>
+
+<p>Please complete your payment to avoid cancellation of your reservation.</p>
+
+<p>If you have any questions, please reply directly to this email.</p>
+
+<hr style="border: 0; border-top: 1px solid #eeeeee; margin: 20px 0;">
+
+<p style="font-size: 13px; color: #888888;">
+    Escape Rentals Team
+</p>
+
+</body>
+</html>

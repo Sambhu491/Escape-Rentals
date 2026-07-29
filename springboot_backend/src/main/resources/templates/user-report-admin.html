@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>New User Report</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f4f4f7;font-family:Arial,Helvetica,sans-serif;">
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f4f7;padding:24px 0;">
+    <tr>
+        <td align="center">
+            <table role="presentation" width="600" cellpadding="0" cellspacing="0"
+                   style="background-color:#ffffff;border-radius:8px;overflow:hidden;">
+
+                <tr>
+                    <td style="background-color:#c0392b;padding:20px 28px;">
+                        <h1 style="margin:0;color:#ffffff;font-size:20px;">New User Report</h1>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:28px;color:#333333;font-size:15px;line-height:1.6;">
+
+                        <p style="margin:0 0 16px 0;">
+                            Hello <strong th:text="${adminFirstName}">Admin</strong>,
+                        </p>
+
+                        <p style="margin:0 0 20px 0;">
+                            A new user report has been submitted and requires your review.
+                        </p>
+
+                        <table role="presentation" width="100%" cellpadding="8" cellspacing="0"
+                               style="border:1px solid #e5e5e5;border-radius:6px;font-size:14px;">
+                            <tr style="background-color:#fafafa;">
+                                <td style="color:#666;width:40%;">Report ID</td>
+                                <td style="color:#111;font-weight:bold;" th:text="${reportId}">12</td>
+                            </tr>
+                            <tr>
+                                <td style="color:#666;">Report Type</td>
+                                <td style="color:#c0392b;font-weight:bold;" th:text="${reportType}">FRAUD</td>
+                            </tr>
+                            <tr style="background-color:#fafafa;">
+                                <td style="color:#666;">Reported User</td>
+                                <td style="color:#111;" th:text="${reportedUserName}">Jane Doe</td>
+                            </tr>
+                            <tr>
+                                <td style="color:#666;">Reported User ID</td>
+                                <td style="color:#111;" th:text="${reportedUserId}">45</td>
+                            </tr>
+                            <tr style="background-color:#fafafa;">
+                                <td style="color:#666;">Reported By</td>
+                                <td style="color:#111;" th:text="${reporterName}">John Doe</td>
+                            </tr>
+                        </table>
+
+                        <p style="margin:24px 0 8px 0;font-weight:bold;color:#111;">Description</p>
+                        <p style="margin:0;padding:14px;background-color:#fdf3f2;border-left:4px solid #c0392b;
+                                  border-radius:4px;color:#444;white-space:pre-wrap;"
+                           th:text="${description}">
+                            This user has repeatedly cancelled confirmed bookings without notice.
+                        </p>
+
+                        <p style="margin:24px 0 0 0;color:#555;">
+                            Please review this report from your admin dashboard and take the appropriate action.
+                        </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color:#fafafa;padding:16px 28px;color:#888;font-size:12px;text-align:center;">
+                        Escape Rentals &middot; Automated Admin Notification
+                    </td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

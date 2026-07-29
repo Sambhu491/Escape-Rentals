@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Successful</title>
+</head>
+<body style="font-family: Arial, sans-serif; color: #333333; margin: 0; padding: 20px; line-height: 1.6;">
+
+<h2 style="color: #27ae60;">Payment Successful</h2>
+
+<p>Hello <strong th:text="${firstName}">User</strong>,</p>
+
+<p>We have successfully received your payment for your Escape Rentals reservation.</p>
+
+<p>Your transaction reference details:</p>
+<div style="background: #f4f4f4; border-left: 4px solid #27ae60; padding: 12px 15px; font-size: 18px; font-weight: bold; font-family: monospace; color: #333333; margin: 15px 0; max-width: 300px;">
+    <span th:text="${paymentId}">PAY123</span>
+</div>
+
+<p>A formal receipt has been attached to your account profile. If you have any questions regarding this charge, please reply directly to this email.</p>
+
+<hr style="border: 0; border-top: 1px solid #eeeeee; margin: 20px 0;">
+
+<p style="font-size: 13px; color: #888888;">
+    Escape Rentals Team
+</p>
+
+</body>
+</html>

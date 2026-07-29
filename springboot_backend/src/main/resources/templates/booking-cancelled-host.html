@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Booking Cancelled by Guest</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; color: #333333; margin: 0; padding: 20px; line-height: 1.6;">
+
+<h2 style="color: #d9534f;">Booking Cancelled</h2>
+
+<p>Hello <strong th:text="${hostFirstName}">Host</strong>,</p>
+
+<p>
+    Guest has cancelled their booking for your property listed on Escape Rentals.
+</p>
+
+<p>
+    Booking details:
+</p>
+
+<div style="background: #f4f4f4; border-left: 4px solid #d9534f; padding: 12px 15px; font-size: 15px; margin: 15px 0; max-width: 450px;">
+
+    <p style="margin: 5px 0;">
+        <strong>Booking Reference ID:</strong>
+        <span th:text="${bookingId}">BKG123</span>
+    </p>
+
+    <p style="margin: 5px 0;">
+        <strong>Property:</strong>
+        <span th:text="${propertyName}">Beach Villa</span>
+    </p>
+
+    <p style="margin: 5px 0;">
+        <strong>Guest:</strong>
+        <span th:text="${guestName}">John Doe</span>
+    </p>
+
+    <p style="margin: 5px 0;">
+        <strong>Check-in:</strong>
+        <span th:text="${checkInDate}">2026-08-10</span>
+    </p>
+
+    <p style="margin: 5px 0;">
+        <strong>Check-out:</strong>
+        <span th:text="${checkOutDate}">2026-08-15</span>
+    </p>
+
+</div>
+
+<p>
+    The property availability has been updated. You can review your bookings from your host dashboard.
+</p>
+
+<p>
+    If you have any questions regarding this cancellation, please contact Escape Rentals support.
+</p>
+
+<hr style="border: 0; border-top: 1px solid #eeeeee; margin: 20px 0;">
+
+<p style="font-size: 13px; color: #888888;">
+    Escape Rentals Team
+</p>
+
+</body>
+</html>

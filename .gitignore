@@ -1,0 +1,23 @@
+# React
+react_frontend/node_modules/
+react_frontend/dist/
+react_frontend/build/
+react_frontend/.env
+
+# Spring Boot
+springboot_backend/target/
+
+# Spring local configuration
+springboot_backend/src/main/resources/application-local.properties
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

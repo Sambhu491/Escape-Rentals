@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Booking Confirmed</title>
+</head>
+<body style="font-family: Arial, sans-serif; color: #333333; margin: 0; padding: 20px; line-height: 1.6;">
+
+<h2 style="color: #2d6cdf;">Booking Confirmed</h2>
+
+<p>Hello <strong th:text="${firstName}">User</strong>,</p>
+
+<p>Thank you for choosing Escape Rentals! Your booking has been successfully processed and confirmed.</p>
+
+<p>Your booking reference ID is:</p>
+<div style="background: #f4f4f4; border-left: 4px solid #2d6cdf; padding: 12px 15px; font-size: 18px; font-weight: bold; font-family: monospace; color: #333333; margin: 15px 0; max-width: 300px;">
+    <span th:text="${bookingId}">BKG123</span>
+</div>
+
+<p>You can manage your booking or view full details by logging into your account dashboard.</p>
+
+<hr style="border: 0; border-top: 1px solid #eeeeee; margin: 20px 0;">
+
+<p style="font-size: 13px; color: #888888;">
+    Escape Rentals Team
+</p>
+
+</body>
+</html>

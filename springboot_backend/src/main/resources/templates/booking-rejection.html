@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking Request Cancelled</title>
+</head>
+<body style="font-family: Arial, sans-serif; color:#333333; margin:0; padding:20px; line-height:1.6;">
+
+<h2 style="color:#d9534f;">Booking Request Cancelled</h2>
+
+<p>Hello <strong th:text="${firstName}">User</strong>,</p>
+
+<p>
+    We appreciate your interest in booking with Escape Rentals.
+</p>
+
+<p>
+    Unfortunately, your booking request for
+    <strong th:text="${propertyTitle}">Property Name</strong>
+    could not be approved by the host.
+</p>
+
+<div style="background:#fff4f4;
+            border-left:4px solid #d9534f;
+            padding:12px 15px;
+            margin:15px 0;">
+
+    Your booking request has been declined.
+
+</div>
+
+<p>
+    Don't worry! There are many other great properties available.
+    Visit your dashboard to browse similar listings and submit another booking request.
+</p>
+
+<hr style="border:0; border-top:1px solid #eeeeee; margin:20px 0;">
+
+<p style="font-size:13px; color:#888888;">
+    Thank you for choosing Escape Rentals.<br>
+    Escape Rentals Team
+</p>
+
+</body>
+</html>

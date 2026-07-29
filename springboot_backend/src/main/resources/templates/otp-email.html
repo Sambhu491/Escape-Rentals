@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Escape Rentals Verification</title>
+</head>
+<body style="font-family: Arial, sans-serif; color: #333333; margin: 0; padding: 20px; line-height: 1.6;">
+
+<h2 style="color: #2d6cdf;">Escape Rentals</h2>
+
+<p>Hello <strong th:text="${firstName}">Customer</strong>,</p>
+
+<p>Thank you for signing up for Escape Rentals. Use the verification code.</p>
+
+<div style="background: #f4f4f4; border-radius: 4px; padding: 15px 0; font-size: 32px; font-weight: bold; width: 200px; text-align: center; letter-spacing: 5px; color: #2d6cdf; margin: 20px 0;">
+    <span th:text="${otpCode}">123456</span>
+</div>
+
+<p>This verification code expires in <strong>5 minutes</strong>.</p>
+
+<p style="font-size: 13px; color: #666666;">If you didn't request this code, you can safely ignore this email.</p>
+
+<hr style="border: 0; border-top: 1px solid #eeeeee; margin: 20px 0;">
+
+<p style="font-size: 13px; color: #888888;">
+    Escape Rentals Team
+</p>
+
+</body>
+</html>
