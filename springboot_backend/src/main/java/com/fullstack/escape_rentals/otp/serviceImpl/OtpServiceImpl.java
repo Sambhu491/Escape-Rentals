@@ -72,9 +72,14 @@ public class OtpServiceImpl implements OtpService {
         }
 
         PendingRegistrationEntity userRegister = pendingRegistrationRepository.findByEmail(email).orElse(null);
-        String name = "";
-        if( userRegister.getFirstName() != null) {
-            name = userRegister.getFirstName();
+        UserEntity userEntity = userRepository.findByEmail(email).orElse(null);
+
+        String userName = "";
+        if(userRegister != null &&  userRegister.getFirstName() != null) {
+            userName = userRegister.getFirstName();
+        }
+        if(userEntity != null && userEntity.getFirstName()!=null) {
+            userName = userEntity.getFirstName();
         }
 
         otpRepository.deleteByEmailAndPurpose(email,purpose);
@@ -92,7 +97,7 @@ public class OtpServiceImpl implements OtpService {
         otpRepository.save(entity);
 
         notificationService.sendOtpEmail(
-                name,
+                userName,
                 email,
                 otp
         );
